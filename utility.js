@@ -16,16 +16,18 @@ function buyThisNow(target) {
   li.innerText = productName;
   document.getElementById('product-details').appendChild(li); // individual product name display in view cart modal.
 
-  // let products = document.getElementById('product-details').innerText;
   
+  
+  
+  var i = document.getElementById('product-details').childElementCount;
   let itemCountElement = document.getElementById('item-counts');
-  itemCountElement.textContent = itemCount;
-  itemCount++; // Increment the item count
-  document.getElementById('item-counts2').innerText = itemCount;
-  // const existingItem = productName.find(item => item.name === productName);
+  itemCountElement.innerText = i;
+  // Increment the item count
+  var j = document.getElementById('item-counts2');
+  j.innerText = i;
 
   
-  console.log(productName);
+  console.log(i);
 
 }
 
